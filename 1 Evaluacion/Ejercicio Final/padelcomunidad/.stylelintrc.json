@@ -24,7 +24,9 @@
       }
     ],
     "number-max-precision": 5,
-    "scss/dollar-variable-empty-line-before": null
+    "scss/dollar-variable-empty-line-before": null,
+    "max-line-length": null,
+    "value-list-max-empty-lines": null
   },
   "overrides": [
     {

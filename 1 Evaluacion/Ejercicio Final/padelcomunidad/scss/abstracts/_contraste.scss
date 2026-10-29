@@ -22,9 +22,9 @@
 }
 
 @function luminancia($color) {
-  $r: canal-lineal(color.channel($color, "red", $space: rgb));
-  $g: canal-lineal(color.channel($color, "green", $space: rgb));
-  $b: canal-lineal(color.channel($color, "blue", $space: rgb));
+  $r: canal-lineal(color.red($color));
+  $g: canal-lineal(color.green($color));
+  $b: canal-lineal(color.blue($color));
 
   @return 0.2126 * $r + 0.7152 * $g + 0.0722 * $b;
 }

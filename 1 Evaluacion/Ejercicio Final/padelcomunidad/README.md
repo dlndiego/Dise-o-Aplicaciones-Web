@@ -3,12 +3,13 @@
 Proyecto integrador de **Diseño de Interfaces Web (0615) · 2.º DAW**.
 Todo el alumnado parte de esta plantilla, use o no Figma.
 
-## Puesta en marcha (5 minutos)
+## Puesta en marcha (2 minutos)
 
-Requisitos: **Node.js 20 o superior** y **VS Code**.
+Requisitos: **Node.js 12.22 o superior** y **VS Code**. Compruébalo con `node -v` y `npm -v`.
+
+Las dependencias (Sass y Stylelint) ya vienen dentro de la carpeta `node_modules`: **no hace falta ejecutar `npm install`** ni tener conexión a internet.
 
 ```bash
-npm install        # instala Sass y Stylelint (solo la primera vez)
 npm run dev        # compila scss/ → css/estilos.css y vigila cambios
 ```
 

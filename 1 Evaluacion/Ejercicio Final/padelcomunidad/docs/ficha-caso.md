@@ -5,7 +5,7 @@
 
 | Dato | Tu caso |
 | --- | --- |
-| N.º de caso | 4|
+| N.º de caso | |
 | Comunidad (razón social) | Comunidad de Propietarios … |
 | CIF ficticio | H-0000000_ |
 | Domicilio | |
