@@ -18,7 +18,7 @@
 //    Un componente NUNCA usa un primitivo directamente.
 // -------------------------------------------------------------
 $primitivos: (
-  "neutro-0": oklch(87.028% 0.07629 292),
+  "neutro-0": #f8fafc,
   "neutro-50": #f8fafc,
   "neutro-200": #e2e8f0,
   "neutro-400": #94a3b8,
@@ -27,12 +27,12 @@ $primitivos: (
   "neutro-900": #0f172a,
 
   // TODO Fase 1: escala del color de acento de tu ficha de caso
-  "acento-50": #f0fdfa,
-  "acento-300": #5ee0e2,
-  "acento-400": #00aaad,
-  "acento-700": #007a7d,
-  "acento-800": #006466,
-  "acento-950": #042f2e,
+  "acento-50": hsl(292, 100%, 93%),
+  "acento-300":  hsl(292, 100%, 80%),
+  "acento-400":  hsl(292, 100%, 70%),
+  "acento-700": hsl(292, 100%, 30%),
+  "acento-800": hsl(292, 100%, 20%),
+  "acento-950": hsl(292, 100%, 10%),
 
   "exito-50": #ecfdf5,
   "exito-300": #6ee7b7,

@@ -6,7 +6,7 @@
 ## Ruta de trabajo
 
 - [ ] Ruta A · Figma (enlace con permiso de lectura: …)
-- [ ] Ruta B · VS Code (diseño directamente en `guia.html`)
+- [x] Ruta B · VS Code (diseño directamente en `guia.html`)
 
 ## 1. Color (RA1 · CE b)
 
