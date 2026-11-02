@@ -38,6 +38,19 @@ $primitivos: (
   "exito-300": #6ee7b7,
   "exito-700": #047857,
   "exito-950": #022c22,
+
+  // Errores (añadimos el 700 para que pase el contraste de 4.5:1 )
+  "error-50": #fef2f2,
+  "error-300": #fca5a5,
+  "error-600": #dc2626,
+  "error-700": #b91c1c, // <-- NUEVO: más oscuro para ganar contraste
+  "error-950": #450a0a,
+
+  "aviso-50": #fffbeb,
+  "aviso-200": #fde68a,
+  "aviso-500": #d97706,
+  "aviso-700": #b45309, // <-- NUEVO: por si acaso el aviso también cojea
+  "aviso-950": #451a03
 );
 
 // -------------------------------------------------------------
@@ -61,7 +74,13 @@ $tema: (
   "exito-tenue": ("exito-50", "exito-950"),
   "foco": ("acento-700", "acento-400"),
   // TODO Fase 1: añade los que necesites (error, aviso, desactivado…)
-);
+  "error": ("error-700", "error-300"),      // Cambiado "error-600" por "error-700"
+  "error-tenue": ("error-50", "error-950"),
+  "aviso": ("aviso-700", "aviso-200"),      // Cambiado "aviso-500" por "aviso-700" por si las moscas
+  "aviso-tenue": ("aviso-50", "aviso-950")
+  );
+
+
 
 // -------------------------------------------------------------
 // 3. PARES QUE DEBEN CUMPLIR CONTRASTE  (texto/elemento, fondo, mínimo)
@@ -81,6 +100,8 @@ $pares-contraste: (
   ("exito", "exito-tenue", 4.5),
   ("borde-control", "superficie", 3),
   ("foco", "fondo", 3),
+  ("error", "error-tenue", 4.5),
+  ("aviso", "aviso-tenue", 4.5) // <-- Par de contraste nuevo que pide el enunciado
 );
 
 // -------------------------------------------------------------
