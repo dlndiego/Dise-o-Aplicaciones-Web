@@ -21,6 +21,8 @@
 - Base y razón en móvil y escritorio. Por qué esas:
 - Medida de línea (`max-inline-size` del párrafo en `ch`):
 
+Lo dejamos en el 16 y 18 px ya que es la nativa de un movil y un pc...
+
 ## 3. Espaciado y forma
 
 - Escala de espaciado y radios. Si cambias algo respecto a la plantilla, por qué:
