@@ -54,4 +54,97 @@
   // TODO Fase 1: redefine al menos estos elementos con tokens
   //   p (medida máxima de línea en ch), small, strong,
   //   ul/ol, hr, table/th/td, fieldset/legend, label, input, select
+
+  // ==========================================
+// Estilos Base de Etiquetas (base/_elementos.scss)
+// ==========================================
+
+// 1. Párrafos DINAMICOS es decir (con legibilidad optimizada)
+p {
+  max-inline-size: 65ch; // limita a caracteres.
+  text-wrap: pretty; // saltos de linea sin comerse palabras
+  margin-block-end: var(--espacio-m, 1rem); //margen exterior en la parte inferior.
+}
+
+// 2. (Elementos de texto y tipografía en línea)
+small {
+  font-size: 0.875em; //tamaño de la fuente:
+  color: var(--color-texto-secundario, inherit); //Ponemos un color si no lo encuentra pone el color del conenedor en el que esta.
+}
+
+strong {
+  font-weight: 700; // grosor de la letra es decir el negrita.
+  color: var(--color-texto-principal, inherit);
+}
+
+// 3. Listas
+ul, ol {
+  padding-inline-start: 1.5rem; //espaciado estetico entre las el inicio de la palabra y el *
+  margin-block-end: var(--espacio-m, 1rem); // 
+  
+  li {
+    margin-block-end: 0.25rem; //aplica un pequeño margen inferior para cada elemento.
+  }
+}
+
+// 4. Separador horizontal (hr)
+hr {
+  border: 0; // eliminas los bordes que ponen las tablas de html.
+  border-block-start: 1px solid var(--color-borde);// creas un borde de 1px 
+  margin-block: var(--espacio-l, 2rem);// margen vertical.
+}
+
+// 5. Tablas, cabeceras y celdas
+table {
+  width: 100%;
+  border-collapse: collapse; // junta los bordes de las celdas de al lado. 
+  margin-block-end: var(--espacio-l, 2rem);//margen
+}
+
+th, td {
+  padding: var(--espacio-s, 0.5rem) var(--espacio-m, 1rem); // espacio interior del texto para fuera. 1ro espacio arriba y el 2ndo abajo 
+  border-bottom: 1px solid var(--color-borde);// borde de abajo.
+  text-align: left; //alinear texto a la IZQUIERDA
+}
+
+th {
+  font-weight: 600; // negrita 
+}
+
+/* Alineación de cifras/números a la derecha (puedes aplicarlo a celdas numéricas) */
+td.num, th.num, 
+td[data-tipo="numero"] { // SI ES UN NUMEROOO....
+  text-align: right; // lo alinea a la derecha.
+}
+
+// 6. Formularios y controles accesibles
+fieldset {
+  border: 1px solid var(--color-borde-control); 
+  border-radius: var(--borde-radio, 0.375rem); // borde circular
+  padding: var(--espacio-m, 1rem);
+  margin-block-end: var(--espacio-m, 1rem);
+}
+
+legend {
+  padding-inline: 0.5rem; 
+  font-weight: 600;
+  color: var(--color-texto-principal);
+}
+
+label {
+  display: inline-block; // LO HACE UN CUBO Y HACE QUE RESPETE LAS DIMENSIOINES 
+  margin-block-end: 0.35rem;
+  font-weight: 500;
+  color: var(--color-texto-principal);
+}
+
+input, select, textarea {
+  border: 1px solid var(--color-borde-control);
+  border-radius: var(--borde-radio, 0.375rem);
+  background-color: var(--color-fondo-control, #fff);
+  color: var(--color-texto-principal);
+  padding-inline: 0.75rem;
+  width: 100%;
+  
+}
 }

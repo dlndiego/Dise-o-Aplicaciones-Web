@@ -15,6 +15,9 @@
 - Tokens semánticos añadidos y para qué:
 - Pares de contraste añadidos a `$pares-contraste`:
 
+Simplemente hemos dejado fijo el grado de color y hemos ido tocando la saturacion.
+(TOKENS.SCSS)
+
 ## 2. Tipografía (RA1 · CE b)
 
 - Familia elegida y por qué (rendimiento, legibilidad, licencia):
@@ -22,6 +25,7 @@
 - Medida de línea (`max-inline-size` del párrafo en `ch`):
 
 Lo dejamos en el 16 y 18 px ya que es la nativa de un movil y un pc...
+(TOKENS.SCSS)
 
 ## 3. Espaciado y forma
 
