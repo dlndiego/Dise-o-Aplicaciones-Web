@@ -15,8 +15,9 @@
 - Tokens semánticos añadidos y para qué:
 - Pares de contraste añadidos a `$pares-contraste`:
 
-Simplemente hemos dejado fijo el grado de color y hemos ido tocando la saturacion.
-(TOKENS.SCSS)
+#### `Respuesta: `
+
+Simplemente hemos dejado fijo el grado de color y he ido tocando la saturacion en `(TOKENS.SCSS)`, ademas de ir compilandolo y ir comprobando que el contraste de los colores fuese correcto, para ello he usado la herramienta de *contrast-ratio.com* y he ido probando hasta que me ha dado un resultado correcto.
 
 ## 2. Tipografía (RA1 · CE b)
 
@@ -24,12 +25,18 @@ Simplemente hemos dejado fijo el grado de color y hemos ido tocando la saturacio
 - Base y razón en móvil y escritorio. Por qué esas:
 - Medida de línea (`max-inline-size` del párrafo en `ch`):
 
-Lo dejamos en el 16 y 18 px ya que es la nativa de un movil y un pc...
-(TOKENS.SCSS)
+#### `Respuesta: `
+
+Lo dejamos en el 16 y 18 px ya que es la nativa de un movil y un pc en `(TOKENS.SCSS)'. 
+*MOVIL*
+1 rem = 16 px, por lo que la base de 1 rem es 16 px. La razón de línea la dejamos en 1.5 ya que es la recomendada para lectura en pantalla y el max-inline-size lo dejamos en 75 ch ya que es la recomendada para lectura en pantalla.
+*PC*
+1.125 rem = 18 px, por lo que la base de 1.125 rem es 18 px. La razón de línea la dejamos en 1.5 ya que es la recomendada para lectura en pantalla y el max-inline-size lo dejamos en 75 ch ya que es la recomendada para lectura en pantalla.
 
 ## 3. Espaciado y forma
 
 - Escala de espaciado y radios. Si cambias algo respecto a la plantilla, por qué:
+
 
 ## 4. Componentes (RA1 · CE f)
 

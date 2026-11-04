@@ -57,6 +57,10 @@
     @each $nombre, $valor in $sombras {
       --sombra-#{$nombre}: #{$valor};
     }
+    @each $nombre, $valor in $sombras {
+      --color-borde-control-#{$nombre}: #{$valor};
+    }
+   
   }
 
   // ---------------------------------------------------------

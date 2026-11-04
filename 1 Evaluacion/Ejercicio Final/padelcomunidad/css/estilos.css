@@ -1,6 +1,8 @@
+@charset "UTF-8";
 @layer reset, tokens, base, layout, components, utilities;
 @layer tokens {
   :root {
+    --color-prueba-sombra: light-dark(#0e80f1, #0f172a);
     --color-fondo: light-dark(#f8fafc, #0f172a);
     --color-superficie: light-dark(#f8fafc, #1e293b);
     --color-texto: light-dark(#0f172a, #f8fafc);
@@ -10,7 +12,7 @@
     --color-acento: light-dark(#850099, #eb66ff);
     --color-acento-hover: light-dark(#580066, #f199ff);
     --color-sobre-acento: light-dark(#f8fafc, #0f172a);
-    --color-acento-tenue: light-dark(rgb(250, 219, 255), #2c0033);
+    --color-acento-tenue: light-dark(hsl(292, 100%, 93%), #2c0033);
     --color-exito: light-dark(#047857, #6ee7b7);
     --color-exito-tenue: light-dark(#ecfdf5, #022c22);
     --color-foco: light-dark(#850099, #eb66ff);
@@ -41,6 +43,7 @@
     --radio-tarjeta: 0.75rem;
     --radio-pildora: 999px;
     --sombra-tarjeta: 0 1px 2px rgb(15 23 42 / 0.08), 0 4px 12px rgb(15 23 42 / 0.06);
+    --color-borde-control-tarjeta: 0 1px 2px rgb(15 23 42 / 0.08), 0 4px 12px rgb(15 23 42 / 0.06);
   }
   :where(:root) {
     color-scheme: light dark;
@@ -135,6 +138,74 @@
   code {
     font-family: var(--fuente-mono);
     font-size: 0.9em;
+  }
+  p {
+    max-inline-size: 65ch;
+    text-wrap: pretty;
+    margin-block-end: var(--espacio-m, 1rem);
+  }
+  small {
+    font-size: 0.875em;
+    color: var(--color-texto-secundario, inherit);
+  }
+  strong {
+    font-weight: 700;
+    color: var(--color-texto-principal, inherit);
+  }
+  ul, ol {
+    padding-inline-start: 1.5rem;
+    margin-block-end: var(--espacio-m, 1rem);
+  }
+  ul li, ol li {
+    margin-block-end: 0.25rem;
+  }
+  hr {
+    border: 0;
+    border-block-start: 1px solid var(--color-borde);
+    margin-block: var(--espacio-l, 2rem);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-block-end: var(--espacio-l, 2rem);
+  }
+  th, td {
+    padding: var(--espacio-s, 0.5rem) var(--espacio-m, 1rem);
+    border-bottom: 1px solid var(--color-borde);
+    text-align: left;
+  }
+  th {
+    font-weight: 600;
+  }
+  /* Alineación de cifras/números a la derecha (puedes aplicarlo a celdas numéricas) */
+  td.num, th.num,
+  td[data-tipo=numero] {
+    text-align: right;
+  }
+  fieldset {
+    border: 1px solid var(--color-borde-control);
+    border-radius: var(--borde-radio, 0.375rem);
+    padding: var(--espacio-m, 1rem);
+    margin-block-end: var(--espacio-m, 1rem);
+  }
+  legend {
+    padding-inline: 0.5rem;
+    font-weight: 600;
+    color: var(--color-texto-principal);
+  }
+  label {
+    display: inline-block;
+    margin-block-end: 0.35rem;
+    font-weight: 500;
+    color: var(--color-texto-principal);
+  }
+  input, select, textarea {
+    border: 1px solid var(--color-borde-control);
+    border-radius: var(--borde-radio, 0.375rem);
+    background-color: var(--color-fondo-control, #fff);
+    color: var(--color-texto-principal);
+    padding-inline: 0.75rem;
+    width: 100%;
   }
 }
 @layer layout {
