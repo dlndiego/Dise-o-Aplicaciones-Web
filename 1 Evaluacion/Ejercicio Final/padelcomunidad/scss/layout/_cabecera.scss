@@ -1,0 +1,54 @@
+// Aqui ponemos los estilos relacionados a la cabecera (header);
+
+@use "../abstracts" as *; // usa el indice de la carpeta abstracts ya que es la raiz de todo.
+
+@layer layout {
+  .salto {
+    position: absolute;
+    transform: translateY(-200%);
+  }
+
+  .salto:focus {
+    transform: translateY(0);
+    background-color: var(--color-superficie);
+  }
+
+  .cabecera {
+    background-color: var(--color-superficie);
+    border-bottom: 1px solid var(--color-borde);
+  }
+
+  .cabecera__interior {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--espacio-s);
+  }
+
+  .cabecera__marca {
+    font-size: var(--paso-1);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .menu__lista {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: var(--espacio-xs);
+  }
+
+  .menu__enlace {
+    display: inline-flex;
+    align-items: center;
+    @include objetivo-tactil;
+  }
+
+  .menu__enlace[aria-current="page"] {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
