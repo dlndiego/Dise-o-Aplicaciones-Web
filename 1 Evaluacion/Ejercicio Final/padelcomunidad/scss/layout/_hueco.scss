@@ -1,0 +1,12 @@
+//ESTE ES EL SCSS DE EL MAIN O CONTENIDO DE MEDIO DE LA PAG
+
+@use "../abstracts" as *;
+
+@layer layout {
+  .hueco {
+    border: 1px dashed var(--color-borde-control);
+    padding: var(--espacio-l);
+    color: var(--color-texto-suave);
+    background-color: var(--color-superficie);
+  }
+}

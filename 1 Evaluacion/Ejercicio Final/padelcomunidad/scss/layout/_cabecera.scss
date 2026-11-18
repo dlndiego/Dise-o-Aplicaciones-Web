@@ -8,6 +8,8 @@
     transform: translateY(-200%);
   }
 
+  // con VAR(variable que guarda formato de color) asignamos el color.
+
   .salto:focus {
     transform: translateY(0);
     background-color: var(--color-superficie);
@@ -19,7 +21,7 @@
   }
 
   .cabecera__interior {
-    display: flex;
+    display: flex;// Le hacemos un flex para que los Items sean mas dinamicos y sea todo mas accesible.
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -33,9 +35,9 @@
   }
 
   .menu__lista {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+    display: flex; //hacemos el flex 
+    flex-wrap: wrap; // hacemos el espacio igualado entre items
+    list-style: none; // quitamos el estilo de las listas
     padding: 0;
     margin: 0;
     gap: var(--espacio-xs);
@@ -44,7 +46,7 @@
   .menu__enlace {
     display: inline-flex;
     align-items: center;
-    @include objetivo-tactil;
+    @include objetivo-tactil; // FUNCION INTERNA DE CSS sobre tamaño del ITEM
   }
 
   .menu__enlace[aria-current="page"] {

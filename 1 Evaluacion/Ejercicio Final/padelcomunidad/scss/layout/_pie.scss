@@ -1,0 +1,28 @@
+//ESTE ES EL SCSS DE EL FOOTER O CONTENIDO DE ABAJO DE LA PAG
+
+
+@use "../abstracts" as *;
+
+@layer layout {
+  .pie {
+    border-top: 1px solid var(--color-borde);
+    font-size: var(--paso-menos-1);
+    background-color: var(--color-superficie);
+  }
+
+  .pie__interior {
+    padding-block: var(--espacio-m);
+  }
+
+  .pie__datos {
+    font-style: normal;
+  }
+
+  .pie__enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: var(--espacio-s);
+  }
+}
