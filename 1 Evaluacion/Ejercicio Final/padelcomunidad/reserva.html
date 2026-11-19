@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domotik· Pádel Residencial la Alameda</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior contenedor">
+      <a class="cabecera__marca" href="index.html">Pádel Comunidad de Propietarios Conjunto Residencial la Alameda</a>
+      <nav class="menu" aria-label="Principal">
+        <ul class="menu__lista">
+          <li><a class="menu__enlace" href="index.html">Turnos</a></li>
+          <li><a class="menu__enlace" href="mis-turnos.html">Mis turnos</a></li>
+          <li><a class="menu__enlace" href="normas.html">Normas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="contenedor">
+    <h1>Confirmar reserva</h1>
+    <section aria-labelledby="resumen-turno">
+      <h2 id="resumen-turno">Resumen del turno</h2>
+
+      <p>Fecha: 19/11/2026</p>
+      <p>Pista: Pista Central</p>
+      <p>Horario: 09:00 – 10:30</p>
+    </section>
+    <form action="justificante.html">
+
+      <fieldset>
+        <legend>Número de invitados</legend>
+
+        <div class="invitados">
+
+          <label class="invitados__opcion">
+            <input type="radio" name="invitados" value="0" checked>
+            0
+          </label>
+
+          <label class="invitados__opcion">
+            <input type="radio" name="invitados" value="1">
+            1
+          </label>
+
+          <label class="invitados__opcion">
+            <input type="radio" name="invitados" value="2">
+            2
+          </label>
+
+          <label class="invitados__opcion">
+            <input type="radio" name="invitados" value="3">
+            3
+          </label>
+
+        </div>
+      </fieldset>
+      <section class="aviso" aria-labelledby="titulo-aviso">
+
+        <h2 id="titulo-aviso">Aviso de pago</h2>
+
+        <p>El precio es de 3 € por invitado.</p>
+
+        <p>Realiza el pago por Bizum antes de jugar.</p>
+
+        <p>Teléfono: 600 000 000</p>
+
+        <p>Concepto: <code>PADEL 2B 1911</code></p>
+
+      </section>
+
+      <label>
+        <input type="checkbox" name="normas" required> He leído y acepto las<a href="normas.html"> normas de uso</a>.
+      </label>
+
+    </form>
+    <button class="boton" type="submit">
+      Confirmar reserva
+    </button>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__interior contenedor">
+      <address class="pie__datos">
+        Comunidad de Propietarios Conjunto Residencial la Alameda · CIF H-00000004<br>
+        Paseo de La Alameda, 30 <br>
+        <a href="x">administracion@laalameda.example</a>
+      </address>
+      <nav aria-label="Legal">
+        <ul class="pie__enlaces">
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="normas.html">Normas de uso</a></li>
+        </ul>
+      </nav>
+      <p class="pie__nota"><small>Proyecto académico ficticio · DIW 0615 · 2.º DAW</small></p>
+    </div>
+  </footer>
+</body>
+
+</html>

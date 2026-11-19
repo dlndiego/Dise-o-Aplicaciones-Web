@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +8,7 @@
   <title>Guía de estilo · Pádel Las Palmeras</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
   <!--
     GUÍA DE ESTILO VIVA
@@ -34,44 +36,45 @@
     <!-- ===================================================== -->
     <section class="guia__seccion" aria-labelledby="color">
       <h2 id="color">Color</h2>
-      <p>Tokens semánticos: el nombre indica su función, no su tono. Los contrastes los verifica Sass al compilar; aquí se documentan.</p>
+      <p>Tokens semánticos: el nombre indica su función, no su tono. Los contrastes los verifica Sass al compilar; aquí
+        se documentan.</p>
 
       <div class="guia__desplazable" role="region" aria-label="Tabla de tokens de color" tabindex="0">
-      <table class="guia__tabla">
-        <thead>
-          <tr>
-            <th scope="col">Muestra</th>
-            <th scope="col">Token</th>
-            <th scope="col">Uso</th>
-            <th scope="col">Contraste claro</th>
-            <th scope="col">Contraste oscuro</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="muestra" style="--muestra: var(--color-texto)"></span></td>
-            <td><code>--color-texto</code></td>
-            <td>Texto principal</td>
-            <td>17,1:1 sobre fondo</td>
-            <td>17,1:1 sobre fondo</td>
-          </tr>
-          <tr>
-            <td><span class="muestra" style="--muestra: var(--color-acento)"></span></td>
-            <td><code>--color-acento</code></td>
-            <td>Botón principal, enlaces, selección</td>
-            <td>5,15:1 sobre superficie</td>
-            <td>5,12:1 sobre superficie</td>
-          </tr>
-          <!-- TODO Fase 1: una fila por cada token de $tema, con su uso y sus contrastes -->
-           <tr>
-            <td><span class="muestra" style="--muestra: var(--color-prueba-sombra)"></span></td>
-            <td><code>--sombra</code></td>
-            <td>Sombra bordes, cajas, div</td>
-            <td>5,15:1 sobre cajas</td>
-            <td>5,12:1 sobre cajas</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="guia__tabla">
+          <thead>
+            <tr>
+              <th scope="col">Muestra</th>
+              <th scope="col">Token</th>
+              <th scope="col">Uso</th>
+              <th scope="col">Contraste claro</th>
+              <th scope="col">Contraste oscuro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-texto)"></span></td>
+              <td><code>--color-texto</code></td>
+              <td>Texto principal</td>
+              <td>17,1:1 sobre fondo</td>
+              <td>17,1:1 sobre fondo</td>
+            </tr>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-acento)"></span></td>
+              <td><code>--color-acento</code></td>
+              <td>Botón principal, enlaces, selección</td>
+              <td>5,15:1 sobre superficie</td>
+              <td>5,12:1 sobre superficie</td>
+            </tr>
+            <!-- TODO Fase 1: una fila por cada token de $tema, con su uso y sus contrastes -->
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-prueba-sombra)"></span></td>
+              <td><code>--sombra</code></td>
+              <td>Sombra bordes, cajas, div</td>
+              <td>5,15:1 sobre cajas</td>
+              <td>5,12:1 sobre cajas</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -95,9 +98,12 @@
       <h2 id="espaciado">Espaciado</h2>
       <p>Múltiplos de 4 px. Ningún margen, relleno ni hueco usa un valor fuera de esta escala.</p>
 
-      <div class="guia__fila"><span class="barra" style="--ancho: var(--espacio-2xs)"></span><code>--espacio-2xs</code> 8 px</div>
-      <div class="guia__fila"><span class="barra" style="--ancho: var(--espacio-s)"></span><code>--espacio-s</code> 16 px</div>
-      <div class="guia__fila"><span class="barra" style="--ancho: var(--espacio-m)"></span><code>--espacio-m</code> 24 px</div>
+      <div class="guia__fila"><span class="barra" style="--ancho: var(--espacio-2xs)"></span><code>--espacio-2xs</code>
+        8 px</div>
+      <div class="guia__fila"><span class="barra" style="--ancho: var(--espacio-s)"></span><code>--espacio-s</code> 16
+        px</div>
+      <div class="guia__fila"><span class="barra" style="--ancho: var(--espacio-m)"></span><code>--espacio-m</code> 24
+        px</div>
       <!-- TODO Fase 1: completa la escala -->
     </section>
 
@@ -106,7 +112,8 @@
       <h2 id="componentes">Componentes</h2>
 
       <h3>Botón</h3>
-      <p>Comprueba hover con el ratón y foco con la tecla Tab. En DevTools, el botón <code>:hov</code> fuerza cada estado.</p>
+      <p>Comprueba hover con el ratón y foco con la tecla Tab. En DevTools, el botón <code>:hov</code> fuerza cada
+        estado.</p>
       <div class="guia__fila">
         <button class="boton" type="button">Confirmar reserva</button>
         <button class="boton boton--secundario" type="button">Volver</button>
@@ -137,10 +144,57 @@
 
       <!-- TODO Fase 1: contador de invitados y aviso de pago -->
     </section>
+    <h2>Selector de invitados</h2>
+
+    <!-- Aquí copias el fieldset de invitados -->
+    <fieldset>
+      <legend>Número de invitados</legend>
+
+      <div class="invitados">
+
+        <label class="invitados__opcion">
+          <input type="radio" name="invitados" value="0" checked>
+          0
+        </label>
+
+        <label class="invitados__opcion">
+          <input type="radio" name="invitados" value="1">
+          1
+        </label>
+
+        <label class="invitados__opcion">
+          <input type="radio" name="invitados" value="2">
+          2
+        </label>
+
+        <label class="invitados__opcion">
+          <input type="radio" name="invitados" value="3">
+          3
+        </label>
+
+      </div>
+    </fieldset>
+
+    <h2>Aviso de pago</h2>
+
+    <section class="aviso" aria-labelledby="titulo-aviso">
+
+      <h2 id="titulo-aviso">Aviso de pago</h2>
+
+      <p>El precio es de 3 € por invitado.</p>
+
+      <p>Realiza el pago por Bizum antes de jugar.</p>
+
+      <p>Teléfono: 600 000 000</p>
+
+      <p>Concepto: <code>PADEL 2B 1911</code></p>
+
+    </section>
   </main>
 
   <footer class="contenedor">
     <p><small>Proyecto académico ficticio · DIW 0615 · 2.º DAW</small></p>
   </footer>
 </body>
+
 </html>
