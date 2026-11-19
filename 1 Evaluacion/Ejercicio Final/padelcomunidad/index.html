@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>[Nombre de la página] · Pádel [Tu comunidad]</title>
+  <title>Domotik· Pádel Residencial la Alameda</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
   <a class="salto" href="#contenido">Saltar al contenido</a>
 
   <header class="cabecera">
     <div class="cabecera__interior contenedor">
-      <a class="cabecera__marca" href="index.html">Pádel [Tu comunidad]</a>
+      <a class="cabecera__marca" href="index.html">Pádel Comunidad de Propietarios Conjunto Residencial la Alameda</a>
       <nav class="menu" aria-label="Principal">
         <ul class="menu__lista">
-          <li><a class="menu__enlace" href="index.html">Turnos</a></li>
+          <li><a class="menu__enlace" href="index.html" aria-current="page">Turnos</a></li>
           <li><a class="menu__enlace" href="mis-turnos.html">Mis turnos</a></li>
           <li><a class="menu__enlace" href="normas.html">Normas</a></li>
         </ul>
@@ -23,9 +25,40 @@
   </header>
 
   <main id="contenido" class="contenedor">
-    <h1>[Nombre de la página]</h1>
-    <p class="hueco">[Bloque principal: formulario o listado]</p>
-    <p class="hueco">[Acción principal: botón]</p>
+    <h1>DOMOTIK</h1>
+    <form action="reserva.html">
+      <label for="fecha">Fecha de la reserva</label>
+      <input type="date" id="fecha" name="fecha" required>
+      <fieldset>
+        <legend>Selecciona una pista</legend>
+
+        <label>
+          <input type="radio" name="pista" value="central" required>
+          Pista Central
+        </label>
+      </fieldset>
+      <fieldset class="guia__fila">
+        <legend>Turnos del jueves 29 de octubre</legend>
+        <label class="turno">
+          <input class="turno__control" type="radio" name="turno" value="0900">
+          <span class="turno__hora">09:00 – 10:30</span>
+          <span class="turno__estado">Disponible · Pista Central</span>
+        </label>
+        <label class="turno">
+          <input class="turno__control" type="radio" name="turno" value="1030" disabled>
+          <span class="turno__hora">10:30 – 12:00</span>
+          <span class="turno__estado">Ocupado</span>
+        </label>
+        <label class="turno">
+          <input class="turno__control" type="radio" name="turno" value="1800" checked>
+          <span class="turno__hora">18:00 – 19:30</span>
+          <span class="turno__estado">Disponible · Pista Central</span>
+        </label>
+      </fieldset>
+      <button class="boton" type="submit">
+        Continuar
+      </button>
+    </form>
   </main>
 
   <footer class="pie">
@@ -33,7 +66,7 @@
       <address class="pie__datos">
         [Razón social] · CIF [CIF ficticio]<br>
         [Domicilio ficticio]<br>
-        <a href="mailto:[correo]">[correo]</a>
+        <a href="x">[correo]</a>
       </address>
       <nav aria-label="Legal">
         <ul class="pie__enlaces">
@@ -46,4 +79,5 @@
     </div>
   </footer>
 </body>
+
 </html>
