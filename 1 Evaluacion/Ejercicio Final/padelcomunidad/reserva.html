@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Domotik· Pádel Residencial la Alameda</title>
+  <title>Reserva. Pádel Residencial la Alameda</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -33,7 +33,7 @@
       <p>Pista: Pista Central</p>
       <p>Horario: 09:00 – 10:30</p>
     </section>
-    <form action="justificante.html">
+    <form action="justificante.html" method="get">
 
       <fieldset>
         <legend>Número de invitados</legend>
@@ -75,15 +75,23 @@
         <p>Concepto: <code>PADEL 2B 1911</code></p>
 
       </section>
+      <p class="normas">
+        <label class="normas__label">
+          <input type="checkbox" name="normas" required>
+          <span>
+            He leído y acepto las
+            <a href="normas.html">normas de uso</a>.
+          </span>
+        </label>
+      </p>
 
-      <label>
-        <input type="checkbox" name="normas" required> He leído y acepto las<a href="normas.html"> normas de uso</a>.
-      </label>
+
+      <button class="boton" type="submit">
+        Confirmar reserva
+      </button>
 
     </form>
-    <button class="boton" type="submit">
-      Confirmar reserva
-    </button>
+
   </main>
 
   <footer class="pie">
