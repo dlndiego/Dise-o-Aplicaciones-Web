@@ -16,16 +16,31 @@
   }
 }
 
+// Esto es para el check
+
 @layer components {
+  .normas {
+    width: 100%;
+  }
+
   .normas__label {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     gap: var(--espacio-xs);
+    width: 100%;
     cursor: pointer;
   }
 
   .normas__label input {
-    flex-shrink: 0;
+    flex: 0 0 auto;
+    width: auto;
     margin: 0;
+  }
+
+  .normas__label span {
+    flex: 1 1 auto;
+    min-width: 0;
   }
 }

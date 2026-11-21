@@ -27,7 +27,7 @@ $primitivos: (
   "neutro-900": #0f172a,
 
   // TODO Fase 1: escala del color de acento de tu ficha de caso
-  "acento-50": hsl(292, 100%, 93%),
+  "acento-50": #fadbff,
   "acento-300":  #f199ff,
   "acento-400":  #eb66ff,
   "acento-700": #850099,
@@ -78,9 +78,7 @@ $tema: (
   "error-tenue": ("error-50", "error-950"),
   "aviso": ("aviso-700", "aviso-200"),      // Cambiado "aviso-500" por "aviso-700" por si las moscas
   "aviso-tenue": ("aviso-50", "aviso-950")
-  );
-
-
+);
 
 // -------------------------------------------------------------
 // 3. PARES QUE DEBEN CUMPLIR CONTRASTE  (texto/elemento, fondo, mínimo)

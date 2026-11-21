@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-//Los componentes de el tema, es decir, el recuadro de aviso
+// Los componentes de el tema, es decir, el recuadro de aviso
 @layer components {
   .aviso {
     padding: var(--espacio-m);
