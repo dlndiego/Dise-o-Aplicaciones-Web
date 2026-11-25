@@ -216,6 +216,9 @@
     padding-inline: 0.75rem;
     width: 100%;
   }
+  .envioIncidencia {
+    background-color: var(--color-borde-control);
+  }
   .normas {
     flex-direction: column;
   }
@@ -493,6 +496,29 @@
     color: var(--color-aviso);
     border: 1px solid var(--color-aviso);
     border-radius: var(--radio-tarjeta);
+  }
+}
+@layer components {
+  .urgencia {
+    display: flex;
+    flex-direction: row;
+  }
+  .cont {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+  .baja {
+    color: var(--color-exito);
+    padding-left: 10px;
+  }
+  .media {
+    color: var(--color-aviso);
+    padding-left: 10px;
+  }
+  .alta {
+    color: var(--color-error);
+    padding-left: 10px;
   }
 }
 @layer utilities {

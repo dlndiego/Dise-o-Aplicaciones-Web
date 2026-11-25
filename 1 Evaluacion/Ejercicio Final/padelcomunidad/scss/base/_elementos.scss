@@ -7,6 +7,7 @@
 
 @layer base {
   // añadimos el MAIN y asi evitamos que el contenido este apegado a la cabecera.
+  
   main {
     padding-block: var(--espacio-l);
   }
@@ -148,6 +149,8 @@
     color: var(--color-texto-principal);
   }
 
+  // Metemos aqui el textarea para que coja el formato.
+
   input,
   select,
   textarea {
@@ -159,6 +162,10 @@
     width: 100%;
   }
 
+
+   .envioIncidencia {
+    background-color: var(--color-borde-control) ;
+  }
   .normas {
     flex-direction: column;
   }

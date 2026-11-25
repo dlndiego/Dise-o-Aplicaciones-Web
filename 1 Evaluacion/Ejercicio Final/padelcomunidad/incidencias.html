@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incidencias . Padel Residencial la Alameda</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior contenedor">
+      <a class="cabecera__marca" href="index.html">Pádel Comunidad Conjunto Residencial la Alameda</a>
+      <nav class="menu" aria-label="Principal">
+        <ul class="menu__lista">
+          <li><a class="menu__enlace" href="index.html">Turnos</a></li>
+          <li><a class="menu__enlace" href="mis-turnos.html">Mis turnos</a></li>
+          <li><a class="menu__enlace" href="normas.html">Normas</a></li>
+          <li><a class="menu__enlace" href="incidencias.html" aria-current="page">Incidencias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="contenedor">
+    <article class="lectura">
+
+      <h1>INCIDENCIAS</h1>
+
+
+
+      <section class="aviso" aria-labelledby="titulo-aviso">
+        <div>
+          <form action="incidencias.html">
+            <label>
+              <input type="radio" name="invitados" value="0" checked>
+              Estado de Pista
+            </label>
+
+            <label>
+              <input type="radio" name="invitados" value="1">
+              Iluminacion
+            </label>
+
+            <label>
+              <input type="radio" name="invitados" value="2">
+              acceso
+            </label>
+
+            <label>
+              <input type="radio" name="invitados" value="3">
+              Reserva o pago
+            </label>
+
+            <br><br>
+
+            <label for="pista">Pista Afectada:</label>
+            <input type="text" required>
+
+            <br><br>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="date" required>
+
+            <br><br>
+
+            <label for="Descripcion">Descripcion:</label>
+            <textarea name="DescripcionDelError" id="textoError"></textarea>
+
+            <br><br>
+
+            <div class="urgencia">
+              <label class="cont">
+                <input type="radio" name="normas" >
+                <span class="baja">
+                  Baja
+              </label>
+              <label class="cont">
+                <input type="radio" name="normas" >
+                <span class="media">
+                  Media
+                </span>
+              </label>
+              <label class="cont">
+                <input type="radio" name="normas" >
+                <span class="alta">
+                  Alta
+                </span>
+              </label>
+            </div>
+
+            <br><br>
+
+            <label for="Correo">Correo</label>
+            <input type="email" name="correo" id="correo" >
+
+            <br><br>
+
+            <div class="normas">
+              <label class="normas__label">
+                <input type="checkbox" name="normas" required>
+                <span>
+                  He leído y acepto las
+                  <a href="normas.html">normas de uso</a>.
+                </span>
+              </label>
+            </div>
+
+            <br><br>
+
+            <input type="submit" name="envioIncidencia" id="enviar" value="Enviar Incidencia">
+          </form>
+        </div>
+
+      </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__interior contenedor">
+      <address class="pie__datos">
+        Comunidad de Propietarios Conjunto Residencial la Alameda · CIF H-00000004<br>
+        Paseo de La Alameda, 30 <br>
+        <a href="x">administracion@laalameda.example</a>
+      </address>
+      <nav aria-label="Legal">
+        <ul class="pie__enlaces">
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="normas.html">Normas de uso</a></li>
+        </ul>
+      </nav>
+      <p class="pie__nota"><small>Proyecto académico ficticio · DIW 0615 · 2.º DAW</small></p>
+    </div>
+  </footer>
+</body>
+
+</html>

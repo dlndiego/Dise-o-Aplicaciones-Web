@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+@layer components {
+  .urgencia {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cont { 
+      display: flex;
+      flex-direction: row;
+      margin-left: 10px;
+  }
+
+  .baja {
+    color: var(--color-exito);
+    padding-left: 10px;
+  }
+
+  .media {
+    color: var(--color-aviso);
+    padding-left: 10px;
+  }
+
+  .alta {
+    color: var(--color-error);
+    padding-left: 10px;
+  }
+}
